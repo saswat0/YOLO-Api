@@ -1,0 +1,14 @@
+name: OD-webapp
+
+dependencies:
+  - python==3.7
+  - pip
+  - matplotlib
+  - opencv
+  - pip:
+    - tensorflow==2.0.3
+    - lxml
+    - tqdm
+    - flask
+    - seaborn
+    - pillow
