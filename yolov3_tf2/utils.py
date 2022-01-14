@@ -26,6 +26,7 @@ YOLOV3_TINY_LAYER_LIST = [
 
 def load_darknet_weights(model, weights_file, tiny=False):
     wf = open(weights_file, 'rb')
+    major, minor, revision, seen, _ = np.fromfile(wf, dtype=np.int32, count=5)
 
     if tiny:
         layers = YOLOV3_TINY_LAYER_LIST
